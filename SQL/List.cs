@@ -55,5 +55,27 @@ namespace SQL
             Change ad = new Change();
             ad.ShowDialog();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Adding add = new Adding();
+            add.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DB db = new DB();
+            db.openConnection();
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            MySqlCommand command = new MySqlCommand("Delete from" + "`" + comboBox1.Text + "`"+"where id="+ textBox1.Text, db.getConnection());
+            dataGridView1.DataSource = command;
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+            if (table.Rows.Count > 0)
+            {
+                dataGridView1.DataSource = table;
+            }
+        }
     }
 }

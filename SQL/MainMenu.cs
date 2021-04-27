@@ -23,5 +23,18 @@ namespace SQL
             List llll = new List();
             llll.ShowDialog();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+            if (AdminCheck.master == true)
+                label1.Text = "ADMIN";
+            else
+                label1.Text = "User";
+        }
     }
 }

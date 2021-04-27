@@ -18,26 +18,38 @@ namespace SQL
             InitializeComponent();
         }
         MainMenu kik = new MainMenu();
+        AdminCheck kk = new AdminCheck();
         private void button1_Click(object sender, EventArgs e)
         {
-            String loginUser = LoginBox.Text;
-            String passUser = PasBox.Text;
             DB db = new DB();
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
-            MySqlCommand command = new MySqlCommand("Select * FROM  `users` WHERE  `Login`= @uL AND `Password`= @uP ", db.getConnection());
-            command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = loginUser;
-            command.Parameters.Add("@uP", MySqlDbType.VarChar).Value = passUser;
+            MySqlCommand command = new MySqlCommand("Select * FROM  `users` WHERE  `Login` =" + "'" + LoginBox.Text + "'" + "AND" + " `Password` =" + "'" + PasBox.Text + "'"+"AND"+"`Status`= 'admin'", db.getConnection());           
             adapter.SelectCommand = command;
             adapter.Fill(table);
             if (table.Rows.Count > 0)
             {
+                AdminCheck.master = true;
                 this.Hide();
-                MessageBox.Show("Yes!");
-                kik.ShowDialog();             
+                MessageBox.Show("Welcome ADMIN");
+                kik.ShowDialog();
             }
             else
-                MessageBox.Show("No!");
+            {
+                MySqlCommand funny = new MySqlCommand ("Select * FROM  `users` WHERE  `Login` =" + "'" + LoginBox.Text + "'" + "AND" + " `Password` =" + "'" + PasBox.Text + "'", db.getConnection());
+                adapter.SelectCommand = funny;
+                adapter.Fill(table);
+                if (table.Rows.Count > 0)
+                {
+                    this.Hide();
+                    MessageBox.Show("Yes!");
+                    kik.ShowDialog();
+                }
+                else
+                    MessageBox.Show("No!");
+            }
+
+
         }
     }
 }
