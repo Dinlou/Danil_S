@@ -37,6 +37,8 @@ namespace Project_22042021
             this.отделToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.название1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.название2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.redgraveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ukraineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.отчётыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -56,8 +58,6 @@ namespace Project_22042021
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.redgraveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ukraineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -126,16 +126,30 @@ namespace Project_22042021
             // название1ToolStripMenuItem
             // 
             this.название1ToolStripMenuItem.Name = "название1ToolStripMenuItem";
-            this.название1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.название1ToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.название1ToolStripMenuItem.Text = "Brazil";
             this.название1ToolStripMenuItem.Click += new System.EventHandler(this.название1ToolStripMenuItem_Click);
             // 
             // название2ToolStripMenuItem
             // 
             this.название2ToolStripMenuItem.Name = "название2ToolStripMenuItem";
-            this.название2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.название2ToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.название2ToolStripMenuItem.Text = "Podolsk";
             this.название2ToolStripMenuItem.Click += new System.EventHandler(this.название2ToolStripMenuItem_Click);
+            // 
+            // redgraveToolStripMenuItem
+            // 
+            this.redgraveToolStripMenuItem.Name = "redgraveToolStripMenuItem";
+            this.redgraveToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.redgraveToolStripMenuItem.Text = "Redgrave";
+            this.redgraveToolStripMenuItem.Click += new System.EventHandler(this.redgraveToolStripMenuItem_Click);
+            // 
+            // ukraineToolStripMenuItem
+            // 
+            this.ukraineToolStripMenuItem.Name = "ukraineToolStripMenuItem";
+            this.ukraineToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.ukraineToolStripMenuItem.Text = "Ukraine";
+            this.ukraineToolStripMenuItem.Click += new System.EventHandler(this.ukraineToolStripMenuItem_Click);
             // 
             // отчётыToolStripMenuItem
             // 
@@ -205,6 +219,7 @@ namespace Project_22042021
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 5;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // button5
             // 
@@ -237,6 +252,7 @@ namespace Project_22042021
             this.Обновить.TabIndex = 0;
             this.Обновить.Text = "Обновить";
             this.Обновить.UseVisualStyleBackColor = true;
+            this.Обновить.Click += new System.EventHandler(this.Обновить_Click);
             // 
             // Добавить
             // 
@@ -247,6 +263,7 @@ namespace Project_22042021
             this.Добавить.TabIndex = 1;
             this.Добавить.Text = "Добавить";
             this.Добавить.UseVisualStyleBackColor = true;
+            this.Добавить.Click += new System.EventHandler(this.Добавить_Click);
             // 
             // button4
             // 
@@ -328,20 +345,6 @@ namespace Project_22042021
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(228, 52);
             this.panel3.TabIndex = 13;
-            // 
-            // redgraveToolStripMenuItem
-            // 
-            this.redgraveToolStripMenuItem.Name = "redgraveToolStripMenuItem";
-            this.redgraveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.redgraveToolStripMenuItem.Text = "Redgrave";
-            this.redgraveToolStripMenuItem.Click += new System.EventHandler(this.redgraveToolStripMenuItem_Click);
-            // 
-            // ukraineToolStripMenuItem
-            // 
-            this.ukraineToolStripMenuItem.Name = "ukraineToolStripMenuItem";
-            this.ukraineToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ukraineToolStripMenuItem.Text = "Ukraine";
-            this.ukraineToolStripMenuItem.Click += new System.EventHandler(this.ukraineToolStripMenuItem_Click);
             // 
             // MainF
             // 
