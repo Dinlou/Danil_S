@@ -1,0 +1,11 @@
+D:\ProjectsC#\LibFigure\bin\Debug\net5.0\LibFigure.deps.json
+D:\ProjectsC#\LibFigure\bin\Debug\net5.0\LibFigure.dll
+D:\ProjectsC#\LibFigure\bin\Debug\net5.0\ref\LibFigure.dll
+D:\ProjectsC#\LibFigure\bin\Debug\net5.0\LibFigure.pdb
+D:\ProjectsC#\LibFigure\obj\Debug\net5.0\LibFigure.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProjectsC#\LibFigure\obj\Debug\net5.0\LibFigure.AssemblyInfoInputs.cache
+D:\ProjectsC#\LibFigure\obj\Debug\net5.0\LibFigure.AssemblyInfo.cs
+D:\ProjectsC#\LibFigure\obj\Debug\net5.0\LibFigure.csproj.CoreCompileInputs.cache
+D:\ProjectsC#\LibFigure\obj\Debug\net5.0\LibFigure.dll
+D:\ProjectsC#\LibFigure\obj\Debug\net5.0\ref\LibFigure.dll
+D:\ProjectsC#\LibFigure\obj\Debug\net5.0\LibFigure.pdb
